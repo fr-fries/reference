@@ -1,0 +1,326 @@
+body {
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    tab-size: 4;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    width: 1000px;
+}
+
+body.toc2 {
+    padding-left: 16em;
+    padding-right: 0;
+}
+
+body.toc2:before {
+    content: url("https://fr-fries.github.io/reference/images/logo.png");
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    padding: 0.5em 1.5em;
+}
+
+#toc.toc2 {
+    margin-top: 0 !important;
+    position: fixed;
+    /* width: 15em; */
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    padding: 5.5em 1.2em;
+    height: 100%;
+    font-size: 1.15em;
+    line-height: 1.6;
+    overflow: auto;
+}
+
+#toctitle {
+    display: none;
+    font-size: 1.25em;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.1;
+}
+
+#toc ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#toc ul li {
+    padding-bottom: 0.1em;
+}
+
+#toc ul ul {
+    font-size: 0.9em;
+    padding-left: 1em;
+}
+
+#toc a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#toc a:active {
+    text-decoration: underline;
+}
+
+.api {
+    color: #00B3E3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    padding-block-end: 12em;
+}
+
+.sect1 {
+    margin: 0.7em 0;
+    padding-block-start: 1em;
+    padding-block-end: 2em;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.sect2 {
+    margin: 0.7em 0;
+    padding-block-start: 0.5em;
+    padding-block-end: 0.9em;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 1.7em;
+    text-indent: 0.5em;
+    margin: 0.5em 0;
+    border-left: 5px solid #224099;
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 1.35em;
+    margin-block-start: 0.7em;
+    margin-block-end: 0.7em;
+}
+
+h4 {
+    font-size: 1.1em;
+    margin-block-end: 0.6em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+th {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+td > p {
+    margin: 0;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+td p code {
+    font: 16px/20px Roboto, monospace;
+}
+
+.ulist ul {
+    margin-block-start: 0.5em;
+    margin-block-end: 1.3em;
+}
+
+.ulist ul p {
+    margin-block-start: 0.3em;
+    margin-block-end: 0.5em;
+}
+
+.ulist .title {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+.admonitionblock {
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+    margin-top: 1em;
+    margin-bottom: 0.8em;
+}
+
+.admonitionblock td {
+    border-bottom: none;
+}
+
+.admonitionblock td.icon {
+    width: 40px;
+}
+
+.admonitionblock td.icon .title {
+    font-size: 0;
+    text-align: center;
+    width: 30px;
+}
+
+.admonitionblock td.content {
+    border-left: 1px solid #e5e5e5;
+}
+
+.note td.icon .title:after {
+    display: block;
+    content: url("https://fr-fries.github.io/reference/images/note.png");
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+.tip td.icon .title:after {
+    display: block;
+    content: url("https://fr-fries.github.io/reference/images/tip.png");
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+.important td.icon .title:after {
+    display: block;
+    content: url("https://fr-fries.github.io/reference/images/important.png");
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+.caution td.icon .title:after {
+    display: block;
+    content: url("https://fr-fries.github.io/reference/images/caution.png");
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+.warning td.icon .title:after {
+    display: block;
+    content: url("https://fr-fries.github.io/reference/images/warning.png");
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 1em 1.5em;
+    background: #F7F3F0;
+    font-weight: bold;
+    font: 14px/20px Roboto Mono,monospace;
+}
+
+.hljs,
+.hljs-subst {
+    color: #6E6A69;
+}
+
+.hljs-comment {
+    color: #6E6A69;
+}
+
+.hljs-addition,
+.hljs-meta-string,
+.hljs-section,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-string,
+.hljs-symbol {
+    color: #1428A0;
+}
+
+.hljs-attr {
+    /* color : #00C3B2; */
+    color: #0077C8;
+}
+
+.hljs-attribute,
+.hljs-bullet,
+.hljs-class,
+.hljs-function,
+.hljs-function .hljs-keyword,
+.hljs-meta-keyword,
+.hljs-selector-pseudo,
+.hljs-tag {
+    /* color: #0077C8; */
+    color: #1428A0;
+}
+
+.hljs-deletion,
+.hljs-formula,
+.hljs-keyword,
+.hljs-link,
+.hljs-selector-tag {
+    color: #00B3E3;
+}
+
+.hljs-params,
+.hljs-template-tag,
+.hljs-type {
+    color: #00B3E3;
+}
+
+.hljs-link_label,
+.hljs-literal,
+.hljs-number {
+    /* color: #00B3E3; */
+    color: #00C3B2;
+}
+
+.hljs-built_in,
+.hljs-emphasis,
+.hljs-name,
+.hljs-quote,
+.hljs-strong,
+.hljs-title,
+.hljs-variable {
+    color: #83a598;
+}
+
+.hljs-builtin-name,
+.hljs-doctag {
+    color: #FF4337;
+}
+
+.hljs-code,
+.hljs-meta,
+.hljs-regexp,
+.hljs-selector-id,
+.hljs-template-variable {
+    color: #FFB546;
+}
+
+.hljs-comment,
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-section,
+.hljs-strong,
+.hljs-tag {
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}

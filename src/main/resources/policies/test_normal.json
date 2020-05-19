@@ -1,0 +1,42 @@
+[
+  {
+    "cids": [
+      "cid_normal"
+    ],
+    "objectPolicy": {
+      "ttl": "P1D"
+    },
+    "makeUrlPolicy": {
+      "uploadUrl": {
+        "method": "PUT",
+        "type": "S3",
+        "expires": "PT1M"
+      },
+      "downloadUrl": {
+        "method": "GET",
+        "type": "CF",
+        "expires": "PT1M"
+      }
+    }
+  },
+  {
+    "cids": [
+      "cid_s3down"
+    ],
+    "objectPolicy": {
+      "ttl": "P1D"
+    },
+    "makeUrlPolicy": {
+      "uploadUrl": {
+        "method": "PUT",
+        "type": "S3",
+        "expires": "PT1M"
+      },
+      "downloadUrl": {
+        "method": "GET",
+        "type": "S3",
+        "expires": "PT1M"
+      }
+    }
+  }
+]

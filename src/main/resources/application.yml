@@ -1,0 +1,43 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /sign
+
+spring:
+  pid:
+    file: sign_url.pid
+  mvc:
+    throw-exception-if-no-handler-found: true
+    locale: en_US
+  resources:
+    add-mappings: false
+
+s3:
+  connection-timeout: 50000
+  max-error-retry: 3
+  max-connections: 500
+  protocol: HTTPS
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+handler:
+  access-log-attributes:
+    - api_name
+    - app_id
+    - file_name
+    - object_id
+    - content_type
+    - content_length
+    - res_content_type
+    - res_filename
+    - rcode
+    - rmsg
+  encrypted-access-log-attributes:
+    - user_id
+
+logging:
+  level: debug

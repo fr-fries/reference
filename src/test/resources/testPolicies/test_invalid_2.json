@@ -1,0 +1,22 @@
+[
+  {
+    "cids": [
+      "cid_invalid_2"
+    ],
+    "objectPolicy": {
+      "ttl": "P1D"
+    },
+    "makeUrlPolicy": {
+      "uploadUrl": {
+        "method": "PUT",
+        "type": "S4",
+        "expires": "PT1M"
+      },
+      "downloadUrl": {
+        "method": "GET",
+        "type": "CF",
+        "expires": "PT1M"
+      }
+    }
+  }
+]
