@@ -21,7 +21,7 @@
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <rest-assured.version>3.2.0</rest-assured.version>
-        <aws.version>1.11.475</aws.version>
+        <aws.version>1.12.261</aws.version>
         <jacoco.version>0.8.3</jacoco.version>
     </properties>
 
